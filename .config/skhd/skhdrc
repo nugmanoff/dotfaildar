@@ -1,0 +1,103 @@
+# hyper -> это сочетание клавиш shift + control + option + cmd; 
+# Настраивается с помощью karabiner
+
+####
+# Yabai
+####
+
+# Перезагрузить Yabai
+hyper - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
+# Смена рабочих столов
+hyper - 1 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 1
+hyper - 2 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 2
+hyper - 3 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 3
+hyper - 4 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 4
+hyper - 5 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 5
+hyper - 6 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 6 
+
+# Смена фокуса между мониторами
+cmd + shift - q : yabai -m display --focus 2
+cmd + shift - w : yabai -m display --focus 1
+# Тогглинг между мониторами с помощью одной кнопки
+# hyper - g : yabai -m display --focus recent
+
+# Перемещение окна по рабочему столу и между мониторами
+# hyper - w : yabai -m window --warp north || $(yabai -m window --display north; yabai -m display --focus north)
+# hyper - s : yabai -m window --warp south || $(yabai -m window --display south; yabai -m display --focus south)
+hyper - a : yabai -m window --warp west || $(yabai -m window --display west; yabai -m display --focus west)
+hyper - d : yabai -m window --warp east || $(yabai -m window --display east; yabai -m display --focus east)
+
+# hyper - e : yabai -m window --display 1; yabai -m display --focus 1
+# hyper - d : yabai -m window --display 2; yabai -m display --focus 2
+
+# Перемещение окна между рабочими столами
+hyper - x : yabai -m window --space next; yabai -m space --focus next
+hyper - z : yabai -m window --space prev; yabai -m space --focus prev
+
+# Создать новый рабочий стол
+hyper - n : yabai -m space --create;
+# Закрыть рабочий стол
+hyper - backspace : yabai -m space --destroy;
+
+# Изменение размеров окон
+hyper - i : \
+    yabai -m window --resize top:0:-20 ; \
+    yabai -m window --resize bottom:0:-20
+
+hyper - j : \
+    yabai -m window --resize left:-20:0 ; \
+    yabai -m window --resize right:-20:0
+
+hyper - k : \
+    yabai -m window --resize bottom:0:20 ; \
+    yabai -m window --resize top:0:20
+
+hyper - l : \
+    yabai -m window --resize right:20:0 ; \
+    yabai -m window --resize left:20:0
+
+# Вращение окон
+hyper - r : yabai -m space --rotate 270
+
+# Отразить окна по вертикали
+hyper - y : yabai -m space --mirror y-axis
+
+# Сбалансировать окна (привести впорядок)
+hyper - b : yabai -m space --balance
+
+# Открепить / Закрепить окно
+hyper - h : yabai -m window --toggle float;\
+          yabai -m window --grid 4:4:1:1:2:2
+
+# Зафуллскринить окно
+hyper - f : yabai -m window --toggle zoom-fullscreen
+
+# Затоглить padding и gap для текущего рабочего стола
+hyper - 0 : yabai -m space --toggle padding; yabai -m space --toggle gap
+
+# Переключение между окнами вперёд
+hyper - e : yabai -m window --focus prev || yabai -m window --focus last
+
+# Переключение между окнами назад
+hyper - q : yabai -m window --focus next || yabai -m window --focus first
+
+# Переключение между окнами в стэке
+hyper - tab : yabai -m window --focus stack.next || yabai -m window --focus stack.first
+
+# Превратить окно по заданному направлению в стэк
+hyper - up : yabai -m window --stack north
+hyper - right : yabai -m window --stack east
+hyper - down : yabai -m window --stack south
+hyper - left : yabai -m window --stack west
+
+# Закрыть окон
+hyper - w : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+
+####
+# Applications
+####
+
+# Открыть телеграм
+hyper - t : open -a Telegram
+
