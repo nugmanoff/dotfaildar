@@ -42,6 +42,15 @@ These are my dotfiles and not everything may be suitable to your liking, so be c
 
 Keep in mind that my dotfiles include usage of `yabai` which requires to have SIP disabled to be fully functional. Be really careful with this one. You can read more on [yabai's wiki](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)
 
+# If you want to use simpler version
+
+This one will not contain yabai and skhd and all of the related WM hustle.
+
+- clone this repo`git clone https://github.com/nugmanoff/dotfaildar.git`
+- go to [`bootstrap.d/`](https://github.com/nugmanoff/dotfaildar/tree/master/.config/yadm/bootstrap.d) folder and remove `yabai.sh` and `ubersicht.sh`
+- go to [`.config/`](https://github.com/nugmanoff/dotfaildar/tree/master/.config) folder and remove `skhd` and `yabai` folders
+- run the init script `./dotfaildar/init.sh`
+
 # Credits
 
 Credits goes to my bro [Poorya](https://github.com/pooryasheikh/) for discovering these amazing dotfiles by [ZhongXiLu](https://github.com/ZhongXiLu/dotfiles) and telling me about them. Those dotfiles served as an amazing base scaffold for me. Thanks to ZhongXiLu I discovered [r/unixporn](https://www.reddit.com/r/unixporn/) subreddit and got to know the [rice](https://github.com/ZhongXiLu/dotfiles#what-does-rice-mean) term. 
