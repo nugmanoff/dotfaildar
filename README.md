@@ -1,5 +1,5 @@
 
-<h1 align="center">Aidar's Dotfaildars</h1>
+<h1 align="center">Aidardyn Dotfaildary</h1>
 
 <table align="center">
   <tr>
