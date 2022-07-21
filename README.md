@@ -1,5 +1,5 @@
 
-<h1 align="center">Aidar's Dotfaildars</h1>
+<h1 align="center">Aidardyn Dotfaildary</h1>
 
 <table align="center">
   <tr>
@@ -41,6 +41,15 @@ Run following command:
 These are my dotfiles and not everything may be suitable to your liking, so be careful if you plan on running the command above.
 
 Keep in mind that my dotfiles include usage of `yabai` which requires to have SIP disabled to be fully functional. Be really careful with this one. You can read more on [yabai's wiki](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)
+
+# If you want to use simpler version
+
+This one will not contain yabai and skhd and all of the related WM hustle.
+
+- clone this repo`git clone https://github.com/nugmanoff/dotfaildar.git`
+- go to [`bootstrap.d/`](https://github.com/nugmanoff/dotfaildar/tree/master/.config/yadm/bootstrap.d) folder and remove `yabai.sh` and `ubersicht.sh`
+- go to [`.config/`](https://github.com/nugmanoff/dotfaildar/tree/master/.config) folder and remove `skhd` and `yabai` folders
+- run the init script `./dotfaildar/init.sh`
 
 # Credits
 
