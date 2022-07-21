@@ -67,6 +67,7 @@ alias grs="git restore --staged ."
 alias gr="git reset HEAD && git checkout ."
 # alias gclp="cd $(pbpaste | xargs -I repo bash -c 'git clone repo  && basename repo .git')" # Надо попробовать переписать
 alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias sshkcopy="pbcopy < ~/.ssh/id_ed25519.pub"
 
 #=======
 # Notify
@@ -130,3 +131,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+

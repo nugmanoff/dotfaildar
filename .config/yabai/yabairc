@@ -35,10 +35,13 @@ yabai -m config window_gap                   0
 yabai -m rule --add app="System Preferences" sticky=on layer=above manage=off
 yabai -m rule --add app="Finder" sticky=on layer=above
 yabai -m rule --add app="Telegram" sticky=on layer=above manage=off
+yabai -m rule --add app="iTerm" sticky=on layer=above manage=off border=off
+yabai -m rule --add app="1Password" sticky=on layer=above manage=off
 
 # Status bar (simple-bar)
 yabai -m config external_bar all:32:0
 
-yabai -m space 1 --label music
-yabai -m space 3 --label code
-yabai -m space 4 --label browser
+# Чтобы лейблить рабочие столы
+# yabai -m space 1 --label music
+# yabai -m space 3 --label code
+# yabai -m space 4 --label browser

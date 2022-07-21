@@ -1,6 +1,13 @@
 # hyper -> это сочетание клавиш shift + control + option + cmd; 
 # Настраивается с помощью karabiner
 
+######
+# TODO
+######
+
+# 1. Скрипт на тогглинг любого аппа и поставить это на телегу
+# 2. Перемещение на нужный десктоп сразу по цифре
+
 ####
 # Yabai
 ####
@@ -58,7 +65,7 @@ hyper - l : \
     yabai -m window --resize left:20:0
 
 # Вращение окон
-hyper - r : yabai -m space --rotate 270
+# hyper - r : yabai -m space --rotate 270
 
 # Отразить окна по вертикали
 hyper - y : yabai -m space --mirror y-axis
@@ -100,4 +107,3 @@ hyper - w : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id"
 
 # Открыть телеграм
 hyper - t : open -a Telegram
-
