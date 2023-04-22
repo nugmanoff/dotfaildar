@@ -65,7 +65,7 @@ hyper - l : \
     yabai -m window --resize left:20:0
 
 # Вращение окон
-# hyper - r : yabai -m space --rotate 270
+hyper - x : yabai -m space --rotate 270
 
 # Отразить окна по вертикали
 hyper - y : yabai -m space --mirror y-axis

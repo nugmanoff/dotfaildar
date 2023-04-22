@@ -4,6 +4,8 @@
 <dict>
 	<key>Actions</key>
 	<array/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Argonaut+</key>
@@ -708,7 +710,7 @@
 	<key>HideActivityIndicator</key>
 	<false/>
 	<key>HideScrollbar</key>
-	<true/>
+	<false/>
 	<key>HideTab</key>
 	<true/>
 	<key>HideTabNumber</key>
@@ -1434,7 +1436,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-2</integer>
+			<integer>-1</integer>
 			<key>Scrollback Lines</key>
 			<integer>0</integer>
 			<key>Selected Text Color</key>
@@ -1470,7 +1472,7 @@
 			<key>Silence Bell</key>
 			<false/>
 			<key>Space</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -1499,6 +1501,8 @@
 			<string>/Users/nugmanoff</string>
 		</dict>
 	</array>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1534,6 +1538,8 @@
 	</dict>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<false/>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SeparateWindowTitlePerTab</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
