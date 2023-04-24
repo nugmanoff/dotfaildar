@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/join-meeting.tsx"],
-  "sourcesContent": ["import { open } from \"@raycast/api\";\n\nexport default async function Command(props: { arguments: { meetingId: string } }) {\n  await open(`https://zoom.us/j/${props.arguments.meetingId}`);\n}\n"],
-  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAAI,EAAqB,wBAErB,eAAOF,EAA+BG,EAA6C,CACjF,QAAM,QAAK,qBAAqBA,EAAM,UAAU,WAAW,CAC7D",
-  "names": ["join_meeting_exports", "__export", "Command", "__toCommonJS", "import_api", "props"]
-}
